@@ -11,7 +11,6 @@ logs.send("Webhook Status : **:ok:**")
 
 API.on('message', message => {     
 if (message.content.startsWith("DogeAPI/Tests")) {      
-if (message.author.id === "441980353242988545") {
 	message.channel.send("Pinging Components..")
   message.channel.send("API Bot Status: **:ok:**")
   messsage.channel.send("API Status: **:ok:**")
