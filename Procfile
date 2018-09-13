@@ -1,0 +1,1 @@
+worker: API.js
