@@ -1,0 +1,28 @@
+{
+  "name": "DogeAPI",
+  "version": "V2",
+  "description": "None Of your buisness",
+  "main": "API.js",
+  "scripts": {
+    "start": "node API.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "discord.js": "^11.4.2",
+    "node": "^10.8.0",
+    "sleep": "^5.2.3",
+    "require-reload": "0.2.2"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
