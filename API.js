@@ -2,11 +2,8 @@ const Discord = require("discord.js");
 const API = new Discord.Client
 const logs = new Discord.WebhookClient(("488419185232314369"), ("FLMr1bolqlfGtzOFmMBxtOLR4pIpnAl2248ILexYoWfc1YFQPozaKkBX7PxLzLdALTDM"))
 const PhoenixAPIVER = ("Delta 1.5")
+const APIProcessData = require("./ProcessData.json")
 
-
-
-
-logs.send("Webhook Status : **:ok:**")
 
 
 API.on('message', message => {     
@@ -18,14 +15,22 @@ if (message.content.startsWith("DogeAPI/Tests")) {
 }
 });
 
+API.on('message', message => {   
+if (message.content.startsWith("DogeAPI/Admins")) {  
+message.channel.send("Admin List")
+message.channel.send(`Owner: ${APIProcessData.DogeAPIOwnerAuth1}`)
+message.channel.send(`Owner2: ${APIProcessData.DogeAPIOwnerAuth2}`)
+message.channel.send(`Some Admin :| ${APIProcessData.OwnerAuth2Bro}`)
+}
+});
 
 logs.send("PROCESS DOGEAPI V2 BETA RELEASE STARTING UP")
 API.login(process.env.TOKEN).catch(error => {
-  logs.send(`${ErrorTypes.errorPrefix} DogeAPI2 `+ error.toString());
-  logs.send(`${ErrorTypes.errorPrefix} DogeAPI2 Has Crashed **Reboot Now!**`)
+  logs.send(`${APIProcessData.error} DogeAPI2 `+ error.toString());
+  logs.send(`${APIProcessData.error} DogeAPI2 Has Crashed **Reboot Now!**`)
 });
 API.on('ready', pros => {
   console.log("DogeAPI has Connected Successfully to the Discord API")
-	logs.send(`${ErrorTypes.successPrefix} DogeAPIV2 Has Started Up Successfully`);
-logs.send(`${ErrorTypes.warningPrefix} System Is Running on **DogeAPI_CodeName:Whistler** System Might Crash`)
+	logs.send(`${APIProcessData.successPrefix} DogeAPIV2 Has Started Up Successfully`);
+logs.send(`${APIProcessData.warning} System Is Running on **DogeAPI_CodeName:Whistler** System Might Crash`)
 });
