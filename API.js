@@ -18,9 +18,9 @@ if (message.content.startsWith("DogeAPI/Tests")) {
 API.on('message', message => {   
 if (message.content.startsWith("DogeAPI/Admins")) {  
 message.channel.send("Admin List")
-message.channel.send(`Owner: ${APIProcessData.DogeAPIOwnerAuth1}`)
-message.channel.send(`Owner2: ${APIProcessData.DogeAPIOwnerAuth2}`)
-message.channel.send(`Some Admin :| ${APIProcessData.OwnerAuth2Bro}`)
+message.channel.send(`Owner: <@${APIProcessData.DogeAPIOwnerAuth1}>`)
+message.channel.send(`Owner2: <@${APIProcessData.DogeAPIOwnerAuth2}>`)
+message.channel.send(`Some Admin :| <@${APIProcessData.OwnerAuth2Bro}>`)
 }
 });
 
