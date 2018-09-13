@@ -10,7 +10,7 @@ API.on('message', message => {
 if (message.content.startsWith("DogeAPI/Tests")) {      
 	message.channel.send("Pinging Components..")
   message.channel.send("API Bot Status: **:ok:**")
-  messsage.channel.send("API Status: **:ok:**")
+  message.channel.send("API Status: **:ok:**")
   logs.send("Webhook Status : **:ok:**")
 }
 });
