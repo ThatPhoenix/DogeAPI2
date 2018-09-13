@@ -1,5 +1,9 @@
 {
 "DogeAPIOwnerAuth1" : "338332694725263361",
 "DogeAPIOwnerAuth2" : "441980353242988545",
-"OwnerAuth2Bro" : "465254917574098945"
+"OwnerAuth2Bro" : "465254917574098945",
+"error" : ":sos:",
+"warning" : ":warning:",
+"info" : ":information_source:",
+"successPrefix" : ":white_check_mark:"
 }
