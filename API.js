@@ -21,8 +21,20 @@ if (message.author.id = (`${APIProcessData.DogeAPIOwnerAuth1}`)) {
 message.channel.send("Access Granted Locking Down DogeAPI")
 API.user.setStatus("dnd")
 API.user.setActivity("Security Lockdown")
-message.channel.send(":Warning: DogeAPI Might Go Offline :Warning:")
+message.channel.send(":warning: DogeAPI Might Go Offline :warning:")
 logs.send("System Status: 500 System Lockdown")
+
+}
+}
+});
+
+API.on('message', message => {     
+if (message.content.startsWith("DogeAPI --Lockdown")) {     
+if (message.author.id = (`${APIProcessData.DogeAPIOwnerAuth1}`)) {
+message.channel.send("Access Granted Rebooting")
+API.user.setStatus("dnd")
+API.user.setActivity("Rebooting")
+API.destroy();
 
 }
 }
