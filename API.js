@@ -63,11 +63,11 @@ message.channel.send(`Some Admin :| <@${APIData.OwnerAuth2Bro}>`)
 
 logs.send("PROCESS DOGEAPI V2 BETA RELEASE STARTING UP")
 API.login(process.env.TOKEN).catch(error => {
-  logs.send(`${APIProcessData.error} DogeAPI2 `+ error.toString());
-  logs.send(`${APIProcessData.error} DogeAPI2 Has Crashed **Reboot Now!**`)
+  logs.send(`${APIData.error} DogeAPI2 `+ error.toString());
+  logs.send(`${APIData.error} DogeAPI2 Has Crashed **Reboot Now!**`)
 });
 API.on('ready', pros => {
   console.log("DogeAPI has Connected Successfully to the Discord API")
-	logs.send(`${APIProcessData.successPrefix} DogeAPIV2 Has Started Up Successfully`);
-logs.send(`${APIProcessData.warning} System Is Running on **DogeAPI_CodeName:Whistler** System Might Crash`)
+	logs.send(`${APIData.successPrefix} DogeAPIV2 Has Started Up Successfully`);
+logs.send(`${APIData.warning} System Is Running on **DogeAPI_CodeName:Whistler** System Might Crash`)
 });
