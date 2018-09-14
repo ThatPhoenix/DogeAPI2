@@ -29,7 +29,7 @@ logs.send("System Status: 500 System Lockdown")
 });
 
 API.on('message', message => {     
-if (message.content.startsWith("DogeAPI --Lockdown")) {     
+if (message.content.startsWith("DogeAPI --Reboot")) {     
 if (message.author.id = (`${APIProcessData.DogeAPIOwnerAuth1}`)) {
 message.channel.send("Access Granted Rebooting")
 API.user.setStatus("dnd")
