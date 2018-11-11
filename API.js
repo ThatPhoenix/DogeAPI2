@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const API = new Discord.Client
 const logs = new Discord.WebhookClient(("488419185232314369"), ("FLMr1bolqlfGtzOFmMBxtOLR4pIpnAl2248ILexYoWfc1YFQPozaKkBX7PxLzLdALTDM"))
-const PhoenixAPIVER = ("Delta 1.5")
+const DogeAPIVER = ("Delta 3.0")
 const APIData = require("./ProcessData.json")
 
 
@@ -21,7 +21,6 @@ if (message.author.id = (`${APIData.DogeAPIOwnerAuth1}`)) {
 message.channel.send("Access Granted Locking Down DogeAPI")
 API.user.setStatus("dnd")
 API.user.setActivity("Security Lockdown")
-message.channel.send(":warning: DogeAPI Might Go Offline :warning:")
 logs.send("System Status: 500 System Lockdown")
 
 }
@@ -66,8 +65,7 @@ API.login(process.env.TOKEN).catch(error => {
   logs.send(`${APIData.error} DogeAPI2 `+ error.toString());
   logs.send(`${APIData.error} DogeAPI2 Has Crashed **Reboot Now!**`)
 });
-API.on('ready', pros => {
-  console.log("DogeAPI has Connected Successfully to the Discord API")
-	logs.send(`${APIData.successPrefix} DogeAPIV2 Has Started Up Successfully`);
-logs.send(`${APIData.warning} System Is Running on **DogeAPI_CodeName:Whistler** System Might Crash`)
+API.on('ready' => {
+	logs.send(`${APIData.successPrefix} DogeAPI 2.0 Has Started Up Successfully`);
+logs.send(`${APIData.warning} System Is Running on **DogeAPI 2.0 Codename: Longhorn**`)
 });
