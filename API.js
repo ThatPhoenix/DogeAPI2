@@ -9,6 +9,7 @@ const APIData = require("./ProcessData.json")
 API.on('message', message => {     
 if (message.content.startsWith("DogeAPI/Tests")) {      
 	message.channel.send("Pinging Components..")
+	message.channel.send("DogeAPI 3.0 Stats:")
   message.channel.send("API Bot Status: **:ok:**")
   message.channel.send("API Status: **:ok:**")
   logs.send("Webhook Status : **:ok:**")
@@ -60,12 +61,12 @@ message.channel.send(`Some Admin :| <@${APIData.OwnerAuth2Bro}>`)
 }
 });
 
-logs.send("PROCESS DOGEAPI V2 BETA RELEASE STARTING UP")
+logs.send("Please Wait.. Starting Up DogeAPI 3.0")
 API.login(process.env.TOKEN).catch(error => {
   logs.send(`${APIData.error} DogeAPI2 `+ error.toString());
   logs.send(`${APIData.error} DogeAPI2 Has Crashed **Reboot Now!**`)
 });
 API.on('ready', () => {
-logs.send(`${APIData.successPrefix} DogeAPI 2.0 Has Started Up Successfully`);
-logs.send(`${APIData.warning} System Is Running on **DogeAPI 2.0 Codename: Longhorn**`)
+logs.send(`${APIData.successPrefix} DogeAPI 3.0 Has Started Up Successfully`);
+logs.send(`${APIData.warning} System Is Running on **DogeAPI 3.0 Codename: Longhorn**`)
 });
