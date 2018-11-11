@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const API = new Discord.Client
-const logs = new Discord.WebhookClient(("488419185232314369"), ("FLMr1bolqlfGtzOFmMBxtOLR4pIpnAl2248ILexYoWfc1YFQPozaKkBX7PxLzLdALTDM"))
+const logs = new Discord.WebhookClient(("503636043535482910"), ("y_qDdoCFOdzTMWgiIKv01h4UgJfCju4iDtOhJyUJE9BuBQLeiABsRmUPsahX6ndx2Rea"))
 const DogeAPIVER = ("Delta 3.0")
 const APIData = require("./ProcessData.json")
 
@@ -65,7 +65,7 @@ API.login(process.env.TOKEN).catch(error => {
   logs.send(`${APIData.error} DogeAPI2 `+ error.toString());
   logs.send(`${APIData.error} DogeAPI2 Has Crashed **Reboot Now!**`)
 });
-API.on('ready' => {
-	logs.send(`${APIData.successPrefix} DogeAPI 2.0 Has Started Up Successfully`);
+API.on('ready', () => {
+logs.send(`${APIData.successPrefix} DogeAPI 2.0 Has Started Up Successfully`);
 logs.send(`${APIData.warning} System Is Running on **DogeAPI 2.0 Codename: Longhorn**`)
 });
