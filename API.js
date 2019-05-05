@@ -5,7 +5,7 @@ const DogeAPIVER = ("DogeAPI 2.0")
 const APIData = require("./ProcessData.json")
 
 API.on('ready', () => {   
-    API.user.setActivity(`${DOGEAPOVER}`)   
+    API.user.setActivity(`${DogeAPIVER}`)   
        
 });
 
