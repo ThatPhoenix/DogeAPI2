@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const doge = new Discord.Client();
-
+const APIDATA = ("./ProcessData.json")
 
 doge.on('message', message => {     
 if (message.content.startsWith("DogeBOT --Standby")) {     
