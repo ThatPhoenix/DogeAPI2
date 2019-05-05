@@ -4,7 +4,7 @@ const APIData = require("./ProcessData.json")
 
 doge.on('message', message => {     
 if (message.content.startsWith("DogeBOT --Standby")) {     
-if (message.author.id = (`${APIData.DogeAPIOwnerAuth1}`)) {
+if (message.author.id = ("498186211249225728")) {
 message.channel.send("DogeBot is now on standby/update mode")
 doge.user.setStatus("idle")
 doge.user.setActivity("Please Stand By - Updating!")
@@ -15,7 +15,7 @@ doge.user.setActivity("Please Stand By - Updating!")
   
   doge.on('message', message => {     
 if (message.content.startsWith("DogeBOT --Standby")) {    
-if (message.author.id = (`${APIData.DogeAPIOwnerAuth2}`)) {
+if (message.author.id = ("441980353242988545")) {
 message.channel.send("DogeBot is now on standby/update mode")
 doge.user.setStatus("idle")
 doge.user.setActivity("Please Stand By - Updating!")
@@ -27,7 +27,7 @@ doge.user.setActivity("Please Stand By - Updating!")
 
 doge.on('message', message => {     
 if (message.content.startsWith("DogeBOT --Difficulties")) {     
-if (message.author.id = (`${APIData.DogeAPIOwnerAuth1}`)) {
+if (message.author.id = ("498186211249225728")) {
 message.channel.send("DogeBot is now on Emergency/Difficulties mode")
 doge.user.setStatus("dnd")
 doge.user.setActivity("Please Stand By - We are currently experiencing Difficulties")
@@ -38,7 +38,7 @@ doge.user.setActivity("Please Stand By - We are currently experiencing Difficult
   
   doge.on('message', message => {     
 if (message.content.startsWith("DogeBOT --Difficulties")) {    
-if (message.author.id = (`${APIData.DogeAPIOwnerAuth2}`)) {
+if (message.author.id = ("441980353242988545")) {
 message.channel.send("DogeBot is now on Emergency/Difficulties mode")
 doge.user.setStatus("dnd")
 doge.user.setActivity("Please Stand By - We are currently experiencing Difficulties")
