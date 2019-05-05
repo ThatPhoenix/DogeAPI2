@@ -4,7 +4,10 @@ const logs = new Discord.WebhookClient(("503636043535482910"), ("y_qDdoCFOdzTMWg
 const DogeAPIVER = ("DogeAPI 2.0")
 const APIData = require("./ProcessData.json")
 
-
+API.on('ready', () => {   
+    API.user.setActivity(`${DOGEAPOVER}`)   
+       
+});
 
 API.on('message', message => {     
 if (message.content.startsWith("DogeAPI/Tests")) {      
