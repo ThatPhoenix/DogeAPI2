@@ -3,7 +3,7 @@ const API = new Discord.Client
 const logs = new Discord.WebhookClient(("503636043535482910"), ("y_qDdoCFOdzTMWgiIKv01h4UgJfCju4iDtOhJyUJE9BuBQLeiABsRmUPsahX6ndx2Rea"))
 const DogeAPIVER = ("DogeAPI 2.0")
 const APIData = require("./ProcessData.json")
-DogeStart = require("./Dogebot.js")
+const DogeStart = require("./Dogebot.js")
 
 API.on('ready', () => {   
     API.user.setActivity(`${DogeAPIVER}`)   
