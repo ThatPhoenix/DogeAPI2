@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const doge = new Discord.Client();
-const APIDATA = ("./ProcessData.json")
+const APIData = require("./ProcessData.json")
 
 doge.on('message', message => {     
 if (message.content.startsWith("DogeBOT --Standby")) {     
@@ -25,6 +25,28 @@ doge.user.setActivity("Please Stand By - Updating!")
   });
   
 
+doge.on('message', message => {     
+if (message.content.startsWith("DogeBOT --Difficulties")) {     
+if (message.author.id = (`${APIData.DogeAPIOwnerAuth1}`)) {
+message.channel.send("DogeBot is now on Emergency/Difficulties mode")
+doge.user.setStatus("dnd")
+doge.user.setActivity("Please Stand By - We are currently experiencing Difficulties")
+}
+}
+
+});
+  
+  doge.on('message', message => {     
+if (message.content.startsWith("DogeBOT --Difficulties")) {    
+if (message.author.id = (`${APIData.DogeAPIOwnerAuth2}`)) {
+message.channel.send("DogeBot is now on Emergency/Difficulties mode")
+doge.user.setStatus("dnd")
+doge.user.setActivity("Please Stand By - We are currently experiencing Difficulties")
+
+  }
+}
+  });
+  
  
     
   
