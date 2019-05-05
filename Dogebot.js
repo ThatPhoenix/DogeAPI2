@@ -8,19 +8,33 @@ if (message.author.id = (`${APIData.DogeAPIOwnerAuth1}`)) {
 message.channel.send("DogeBot is now on standby/update mode")
 doge.user.setStatus("idle")
 doge.user.setActivity("Please Stand By - Updating!")
-
-
 }
+}
+
+});
   
-  if (message.author.id = (`${APIData.DogeAPIOwnerAuth2}`)) {
+  doge.on('message', message => {     
+if (message.content.startsWith("DogeBOT --Standby")) {    
+if (message.author.id = (`${APIData.DogeAPIOwnerAuth2}`)) {
 message.channel.send("DogeBot is now on standby/update mode")
 doge.user.setStatus("idle")
 doge.user.setActivity("Please Stand By - Updating!")
 
   }
-});
+}
+  });
+  
+
+ 
+    
+  
+  
 
   
-  doge.on('message', message => {   
+  doge.on('ready', () => {   
+    doge.user.setActivity("DogeBot Version 1!")
+  });
+    
+    
 
 doge.login(process.env.DogeTK)
